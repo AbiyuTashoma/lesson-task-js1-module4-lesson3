@@ -22,9 +22,11 @@ async function getCharacter (){
 
         // console.log(result[0]);
 
+        const character = result[0];
+
         detailsContainer.innerHTML = `<div">
-                                        <h1>${result[0].name}</h1>
-                                        <p>${result[0].occupation}</p>
+                                        <h1>${character.name}</h1>
+                                        <p>${character.occupation}</p>
                                         </div>`;
 
     }
